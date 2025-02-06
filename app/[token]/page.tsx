@@ -23,6 +23,6 @@ export default function TokenPage() {
     <div>
       {myVideo ? <Video src={myVideo} /> : <p>No Video for you</p>}
     </div>
-    <p>myVideo</p></>
+    <p>{myVideo}</p></>
   );
 }
