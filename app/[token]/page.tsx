@@ -22,6 +22,6 @@ export default function TokenPage() {
     <div>
       <p>Test</p>
     </div>
-    <p>{myVideo}</p></>
+    <p>test</p></>
   );
 }
