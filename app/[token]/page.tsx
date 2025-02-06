@@ -19,8 +19,10 @@ export default function TokenPage() {
     getVideo();
   }, []);
   return (
+    <>
     <div>
       {myVideo ? <Video src={myVideo} /> : <p>No Video for you</p>}
     </div>
+    <p>myVideo</p></>
   );
 }
