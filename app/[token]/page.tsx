@@ -19,10 +19,31 @@ export default function TokenPage() {
     getVideo();
   }, []);
   return (
-    <>
-    <div>
-      {myVideo ? <Video src={"https://drive.google.com/uc?export=download&id=1YEWmUFfV5tBt5eX-dfou8beB5EGM4NPB"} /> : <p>No Video for you</p>}
+    <div onContextMenu={(e) => e.preventDefault()}
+      style={{
+        position: 'relative',
+        paddingBottom: '56.25%',
+        height: 0,
+        overflow: 'hidden',
+        maxWidth: '100%',
+        width: '100%',
+      }}
+    >
+      {myVideo ? (<iframe
+        src={myVideo}
+        frameBorder="0"
+        allowFullScreen
+        title="Unlisted Video"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      />) : (<p>Video loading or inacessable</p>)}
+      
     </div>
-    <p>{myVideo}</p></>
+    
   );
 }
