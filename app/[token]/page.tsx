@@ -21,7 +21,7 @@ export default function TokenPage() {
   return (
     <>
     <div>
-      {myVideo ? <Video src={myVideo} /> : <p>No Video for you</p>}
+      {myVideo ? <Video src={"https://drive.google.com/uc?export=download&id=1YEWmUFfV5tBt5eX-dfou8beB5EGM4NPB"} /> : <p>No Video for you</p>}
     </div>
     <p>{myVideo}</p></>
   );
