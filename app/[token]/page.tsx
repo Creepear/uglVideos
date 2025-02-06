@@ -1,6 +1,5 @@
 "use client";
 
-import Video from "next-video";
 import { fetchVideo } from "../lib/actions";
 import { useState, useEffect } from "react";
 
